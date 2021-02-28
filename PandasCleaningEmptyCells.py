@@ -41,7 +41,7 @@ print(df.to_string())
 print()
 
 
-# Using AVERAGE
+# Using MODE
 df = pd.read_csv('data3.csv')
 x = df["Debit Amount"].mode()[0]
 df["Credit Amount"].fillna(x, inplace = True)
